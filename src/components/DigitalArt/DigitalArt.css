@@ -1,0 +1,42 @@
+#graphic-title{
+  font-family: 'pangramextralight';
+}
+
+
+#image-title2{
+  color: #2C3238;
+  font-family: 'pangrambold';
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+}
+
+#work-image2{
+  width: 100% !important;
+  height: auto;
+  background-color: rgba(0,0,0,0);
+}
+
+
+.work-imagetest{
+  width: 100% !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01) !important;
+
+}
+
+.spacer{
+  height: 10px;
+}
+
+.example{
+  margin-left: 100px !important;
+}
+
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}

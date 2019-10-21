@@ -1,0 +1,64 @@
+.contactH1{
+  font-family: 'charregular';
+  color: #2F2F32;
+  font-size: 18pt;
+}
+
+
+.contact-container{
+  float: left;
+  padding: 50px;
+}
+
+#contact-video{
+  width: 350px;
+}
+
+.list-container{
+  color: #2F2F32;
+  font-family: 'charregular';
+  margin-top: 50%;
+}
+
+a:visited{
+}
+
+#contact-a{
+  margin-bottom:  100px !important;
+  font-size: 20pt !important;
+
+}
+
+
+a.contact-a{
+  font-size: 20pt !important;
+}
+
+#new-ul{
+  font-size: 12pt !important;
+}
+
+#contactlist{
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 450px){
+  .contact-container{
+    margin-top: 70px;
+    padding: 15px;
+  }
+
+  #contact-video{
+    width: 335px;
+    margin-left: 0px;
+  }
+
+  #new-ul{
+    font-size: 16pt !important;
+  }
+  #contactlist{
+    margin-bottom: 20px;
+  }
+
+}

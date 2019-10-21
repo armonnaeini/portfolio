@@ -1,0 +1,170 @@
+
+
+.giide-wrapper{
+
+  width: 100vw;
+  margin-top: 180px;
+}
+
+.first-image{
+
+  width: 40%;
+  margin-left: 47%;
+  margin-bottom: 35px;
+  background-color: rgba(0,0,0,0);
+
+
+}
+.first-image-animate{
+
+  width: 40%;
+  margin-left: 53.5%;
+  margin-bottom: 35px;
+  background-color: rgba(0,0,0,0);
+
+
+}
+
+
+.video-container{
+
+  position: relative;
+  padding-bottom: 100%;
+     padding-top: 25px;
+     height: 0;
+     margin-left: 50%;
+
+}
+
+
+
+.iframevid{
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.overlay-container{
+  position: relative;
+  width: 100%;
+}
+
+.second-image{
+  width: 40%;
+
+
+}
+#work-image{
+  width: 100% !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+
+}
+.work-imaget{
+  width: 100% !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  height: 40vh;
+}
+
+#work-image2{
+  width: 100% !important;
+  height: auto;
+  background-color: rgba(0,0,0,0);
+}
+
+.second-image{
+  margin-left: 47%;
+
+}
+
+#image-title{
+  color: #2C3238;
+  font-family: 'charregular';
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+}
+#giide-p{
+color: #626A74;
+font-family: 'charthin';
+font-size: 12pt;
+}
+
+.total-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 98.5%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: black;
+  color: blue;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.overlay-container:hover .overlay {
+  opacity: .85;
+}
+
+.link-button{
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
+color: white !important;
+}
+
+#link{
+  color: white !important;
+  font-size: 12pt;
+  z-index: 1000000000000000;
+
+}
+
+#work-image2{
+}
+
+
+.testtest{
+  width: 300px;
+}
+
+
+
+
+
+@media screen and (max-width: 700px){
+  .first-image{
+
+    width: 75%;
+    margin-left: 40px;
+
+
+  }
+  .first-image-animate{
+
+    width: 75%;
+    margin-left: 40px;
+
+
+  }
+
+  .total-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 335px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+}

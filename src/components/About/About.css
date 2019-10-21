@@ -1,0 +1,299 @@
+  @font-face {
+      font-family: 'pangramblack';
+      src: url('../../pangram-font/pangram-black-webfont.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'pangrambold';
+      src: url('../../pangram-font/pangram-bold-webfont.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'pangramextralight';
+      src: url('../../pangram-font/pangram-extralight-webfont.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+
+  @font-face {
+      font-family: 'pangramregular';
+      src: url('../../pangram-font/pangram-regular-webfont.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+
+  }
+
+  *{
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      color: inherit;
+
+  }
+
+  .image-container-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #me-img-2{
+    height: 100vh;
+    width: auto;
+    align-self: center;
+    margin-right: -50px;
+    margin-bottom: 0;
+    opacity: 1;
+
+  }
+
+  .right-skill{
+    margin-left: 100px;
+  }
+
+
+
+
+  .fade-enter {
+    opacity: 0.01;
+  }
+
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms ease-in;
+  }
+
+  .fade-leave {
+    opacity: 1;
+  }
+
+  .fade-leave.fade-leave-active {
+    opacity: 0.01;
+    transition: opacity 1000ms ease-in;
+  }
+
+  .button-container{
+      width: 100px;
+    	position: absolute;
+    	top:94%;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	margin: auto;
+  }
+
+
+  .switch-button{
+    width: 100px ;
+    color: black;
+    font-size: 12pt;
+    font-family: 'charregular';
+    letter-spacing: .5px;
+    cursor: pointer;
+    background-color: rgba(98,90,255, 0);
+    border: none;
+    transition: .5s ease;
+    z-index: 1000000000;
+    left: 0px;
+    right: 0;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+
+  .switch-button:focus{
+    outline: 0;
+  }
+
+  #about-h1{
+    font-size: 24pt;
+    font-family: 'charregular';
+    color: #424145;
+    white-space: nowrap;
+
+  }
+
+  .about-wrapper{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden !important;
+  }
+
+  .right-side{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    width: 50vw;
+    position: relative;
+  }
+
+
+  /********SKILLS************/
+
+  #skill-h{
+    font-family: 'charregular';
+    margin-bottom: 10px;
+    color: #424145;
+    font-size: 18pt;
+
+  }
+
+
+  .skills-container{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+
+
+  }
+
+
+  #skilllist{
+    font-family: 'charthin';
+    text-decoration: none;
+    color: #424145;
+    margin-bottom: 5px;
+  }
+
+
+
+  li{
+    text-decoration: none;
+    list-style-type: none;
+
+  }
+  .about-header-container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -210px;
+    padding-right: 25px;
+
+  }
+  .right-side-skills{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -210px;
+
+  }
+  #first{
+    color: white;
+  }
+
+  #second{
+    color: white;
+  }
+  #bio{
+    max-width: 525px;
+    font-size: 17px;
+    line-height: 18pt;
+    font-family: 'pangramextralight';
+
+  }
+
+
+
+
+
+  @media  screen and (max-width: 495px) {
+    .right-side{
+      width: 90vw !important;
+    }
+    .button-container{
+        position: relative;
+        padding-bottom: 50px;
+        margin-top: 60px;
+    }
+    #about-h1{
+      font-size: 18pt !important;
+    }
+    .image-container-2{
+      margin-bottom: 50px;
+    }
+
+    #me-img-2{
+      margin-left : 0px !important;
+      height: 60vh !important;
+      margin-bottom: 100px;
+
+
+    }
+  }
+
+  @media  screen and (min-width: 495px) and (max-width: 600px) {
+
+  }
+
+  @media  screen and (max-width: 1000px) {
+    .about-wrapper{
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0px !important;
+    }
+
+    #me-img-2{
+      height: 80vh;
+      align-self: center;
+      margin-right: 0px;
+      margin-bottom: 0;
+      opacity: 1;
+
+    }
+    .image-container-2{
+      position: relative;
+      left: 0;
+      right: 0;
+      margin-bottom: -25px;
+      margin-top: 0px;
+      margin-bottom: 25px;
+    }
+
+
+    .right-side{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 60vh;
+      width: 100vw;
+    }
+
+    .button-container{
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    .about-header-container{
+      position: relative;
+      left: 0;
+      right: 0;
+      max-width: 500px;
+      margin-bottom: -25px;
+      margin-top: -40px;
+    }
+
+    .right-side-skills{
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 500px;
+    }
+    .right-skill{
+      margin-left: 150px;
+    }
+}

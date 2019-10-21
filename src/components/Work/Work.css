@@ -1,0 +1,83 @@
+.route-box{
+  position: fixed;
+  text-decoration: none;
+  top: 70vh;
+  left: 40px;
+}
+
+
+a{
+  text-decoration: none;
+  font-family: 'charthin';
+}
+
+a:visited{
+color:  #2C3238;
+}
+
+
+
+.work-head-container{
+  position: fixed;
+  top: 21vh;
+  left: 40px;
+  max-width: 550px;
+}
+
+
+#work-header{
+  font-size: 22pt;
+  line-height: 36pt;
+  font-family: 'charregular';
+  color: #2C3238;
+
+}
+
+
+li #active {
+  font-family: 'charregular';
+}
+
+
+
+/**MOBILE**/
+@media screen and (max-width: 700px){
+  .work-head-container{
+    top: 9vh;
+    max-width: 300px !important;
+  }
+
+  .route-box{
+    position: fixed;
+    text-decoration: none;
+    top: 23vh;
+    left: 40px;
+  }
+
+  #work-header{
+    font-size: 22pt;
+    line-height: 22pt;
+
+}
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 815px){
+  #work-header{
+    font-size: 28pt;
+    line-height: 30pt;
+
+  }
+  .work-head-container{
+    max-width: 275px !important;
+  }
+}
+
+@media screen and (min-width: 815px) and (max-width: 1025px){
+  .work-head-container{
+    position: fixed;
+    top: 15vh;
+    left: 40px;
+    max-width: 400px;
+  }
+}

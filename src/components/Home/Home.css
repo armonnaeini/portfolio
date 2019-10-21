@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'charblack';
+    src: url('../../char/charlevoixpro-black-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'charbold';
+    src: url('../../char/charlevoixpro-bold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'charregular';
+    src: url('../../char/charlevoixpro-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'charthin';
+    src: url('../../char/CharlevoixPro-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+body {
+  font-family: 'Open Sans';
+}
+
+.wrapper{
+  display: flex;
+  height: 100vh! important;
+  overflow: hidden;
+}
+
+.homeH1{
+  color: #2F2F32;
+  font-size: 28pt;
+  font-family: 'charregular';
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+
+}
+
+.homeH2{
+  color: #2F2F32;
+  font-size: 14pt;
+  font-family: 'charthin';
+  -webkit-font-smoothing: antialiased;
+  font-weight: 100;
+  margin-top: -8px;
+}
+
+.video-react {
+}
+
+.video-container{
+  position: absolute;
+  z-index: -1;
+  margin-left: 80px !important;
+  width: 425px;
+  top: 285px;
+
+}
+
+.main-container{
+  height: 100vh !important;
+}
+
+#home-video{
+  width: 100%;
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+.header-container{
+  position: absolute;
+  left: 80px;
+  top: 180px;
+}
+
+@media screen and (max-width: 450px){
+  .header-container{
+    position: absolute;
+    left: 20px !important;
+    top: 150px;
+  }
+
+  .video-container{
+    margin-top: 30px;
+    margin-left: -75px !important;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 650px){
+  .video-container{
+    width: 350px;
+  }
+}
