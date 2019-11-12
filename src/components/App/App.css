@@ -27,6 +27,31 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'pangram-black';
+    src: url('../../pangram/Pangram-Black.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pangram-bold';
+    src: url('../../pangram/Pangram-Bold.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pangram-regular';
+    src: url('../../pangram/Pangram-Regular.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pangram-extralight';
+    src: url('../../pangram/Pangram-ExtraLight.otf') format('opentype');
+    font-style: normal;
+}
+
+
 html {
      box-sizing: border-box;
    }
@@ -110,10 +135,13 @@ html {
    }
 
    a:visited{
-     color: #424145 !important;
+     color: rgba(220,200,200,.9) !important;
    }
 
    a{
-     color: #424145 !important;
+     color: rgba(220,200,200,.9) !important;
 
+   }
+
+   body{
    }

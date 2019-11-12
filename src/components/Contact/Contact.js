@@ -15,11 +15,11 @@ class Contact extends Component {
 
         <div className = "list-container">
           <ul id = "new-ul">
-            <a class = "contacta" href= "https://www.instagram.com/worldwide_armon/" target="_blank" ><li id = "contactlist">instagram</li></a>
-            <a href= "https://www.linkedin.com/in/armonnaeini/" target="_blank"><li id = "contactlist">linkedin</li></a>
-            <a href= "https://github.com/armonnaeini" target="_blank"><li id = "contactlist">github</li></a>
-            <a href= "mailto: arna0935@colorado.edu"><li id = "contactlist">email</li></a>
-            <a href= "assets/resume_2019.pdf" target="_blank"><li id = "contactlist">resume</li></a>
+            <a class = "contacta" href= "https://www.instagram.com/worldwide_armon/" className="hvr-underline-from-left" target="_blank" ><li id = "contactlist">instagram</li></a>
+            <br></br> <a className="hvr-underline-from-left" href= "https://www.linkedin.com/in/armonnaeini/" className="hvr-underline-from-left" target="_blank"><li id = "contactlist">linkedin</li></a>
+            <br></br> <a className="hvr-underline-from-left" href= "https://github.com/armonnaeini" target="_blank"><li id = "contactlist">github</li></a>
+            <br></br> <a className="hvr-underline-from-left" href= "mailto: arna0935@colorado.edu"><li id = "contactlist">email</li></a>
+            <br></br> <a className="hvr-underline-from-left" href= "assets/resume.pdf" target="_blank"><li id = "contactlist">resume</li></a>
           </ul>
         </div>
       </div>

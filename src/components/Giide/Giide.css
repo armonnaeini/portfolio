@@ -76,14 +76,14 @@
 }
 
 #image-title{
-  color: #2C3238;
-  font-family: 'charregular';
+  color: rgba(220,200,200,.9) !important;
+  font-family: 'pangram-bold';
   margin-bottom: 5px;
   margin-top: 5px;
 
 }
 #giide-p{
-color: #626A74;
+  color: rgba(220,200,200,.9) !important;
 font-family: 'charthin';
 font-size: 12pt;
 }
@@ -107,6 +107,7 @@ font-size: 12pt;
   background-color: black;
   color: blue;
 }
+
 
 /* When you mouse over the container, fade in the overlay icon*/
 .overlay-container:hover .overlay {

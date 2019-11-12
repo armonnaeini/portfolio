@@ -8,11 +8,12 @@
 
 a{
   text-decoration: none;
-  font-family: 'charthin';
+  font-family: 'pangram-extralight';
+  color: white;
 }
 
 a:visited{
-color:  #2C3238;
+  color: white;
 }
 
 
@@ -26,16 +27,18 @@ color:  #2C3238;
 
 
 #work-header{
-  font-size: 22pt;
+  font-size: 38pt;
   line-height: 36pt;
-  font-family: 'charregular';
-  color: #2C3238;
+  font-family: 'pangram-black';
+  color: rgba(220,200,200,.9) !important;
 
 }
 
 
 li #active {
   font-family: 'charregular';
+  color: rgba(220,200,200,.9) !important;
+
 }
 
 

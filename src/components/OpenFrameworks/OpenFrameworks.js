@@ -27,61 +27,74 @@ class OpenFrameworks extends Component {
 
 
         <div className = "first-image">
-          <h2 id = "openHeader">::body</h2>
-          <p id = "openP">::body is an interactive installation currently running (october 17-27th, 2019), in the Roser ATLAS Building of the University of Colorado Boulder.
+        <h2 id = "image-title">Body</h2>
+
+          <p id = "openP">Body is an interactive installation currently running (since October 17th),
+          in the Roser ATLAS Building of the University of Colorado Boulder. The installation consists
+          of a "digital mirror"(4K TV) and a depth sensing camera (Kinect V1). When users walk up to the mirror,
+          the image of their body is augmented into an ambiguous, blob-like entity and when the viewer
+          moves within the space of the installation, trails are left behind of their movements.
+          <br></br><br></br>Body aims to explore the way humans choose to represent themselves in
+          both digital and physical spaces, as the installation introduces a feedback-like relationship
+          between the viewer and the technology. Viewers are encouraged to physically act out in weird,
+          unorthodox manners in order to get a response back from the installation, which brings up a
+          question of what/who is influencing the other.
+          <br></br><br></br>The installation was designed and developed fully by myself, using openFrameworks,
+          a C++ creative toolkit, as well as openCV and an Xbox 360 Kinect V1 Camera. Body has also been
+          commissioned for the Open Access Week event, more info <a href = "https://www.colorado.edu/atlas/2019/10/15/tam-students-project-chosen-open-access-week-installation`">here</a> held at the University of Colorado Boulder, as well.
+          You can view the code <a href = "https://github.com/armonnaeini/-body">here</a>.
 
         </p>
         </div>
 
-        <div className = "first-image">
-        <iframe src="https://player.vimeo.com/video/365377091" className = "work-imaget" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-          <h2 id = "openHeader">::body</h2>
-          <p id = "openP">My final iteration. Made with c++, openFrameworks, and a Kinect v1.</p>
+        <div className = "first-image">
+          <iframe src="https://player.vimeo.com/video/371207109" className = "work-imaget" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
 
         <div className = "first-image">
-          <iframe src="https://player.vimeo.com/video/362384829" className = "work-imaget" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-          <h3 id = "image-title">Space & Time</h3>
-          <p id = "giide-p">The most recent iteration of ::body. As seen in the video, the user is standing in front of the Kinect camera, which is programmed to only pick up their hands. Based on the movement and speed of the hands, the visualization of the user's hands and environment will fluctuate.</p>
+        <p id = "openP">Choreographed interpretation of Lorn's 'Acid Rain' using Body.</p>
+
+          <iframe src="https://player.vimeo.com/video/371189774" className = "work-imaget" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
 
         <div className = "first-image">
-          <iframe src="https://player.vimeo.com/video/358537670" className = "work-imaget" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-          <h3 id = "image-title">Ghost</h3>
-          <p id = "giide-p">A previous state of ::body. The video above shows me, dancing in front of a Kinect Camera. Using, openFrameworks, I then augment the contour of the body which ceates a ghost-like image of the user.</p>
+        <p id = "openP">Some nice surrealism.</p>
+          <iframe src="https://player.vimeo.com/video/367651005" className = "work-imaget" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
 
-          <div className = "first-image">
-          <iframe src="https://player.vimeo.com/video/354033633" className = "work-imaget" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 
-            <h3 id = "image-title">Blobby</h3>
-            <p id = "giide-p">The first iteration of ::body. Achieving the augmented effects, shown above, was an extreme accomplishment for myself, as I was able to take the data the human's body, coming from the Kinect, and then illustrate it using various methodoologies and functions provided by openFramework's vast set of tools.</p>
-          </div>
+        <div className = "first-image">
+          <p id = "openP">Stills taken from various interactees.</p>
+          <ModalImage
+            small={'assets/body_stills/still1.png'}
+            className = "work-imagetest2"
+            large={'assets/body_stills/still1.png'}
+          />
+          <ModalImage
+            small={'assets/body_stills/still2.png'}
+            className = "work-imagetest2"
+            large={'assets/body_stills/still2.png'}
+          />
+          <ModalImage
+            small={'assets/body_stills/still3.png'}
+            className = "work-imagetest2"
+            large={'assets/body_stills/still3.png'}
+          />
+        </div>
 
-          <div className = "first-image">
-            <iframe src="https://player.vimeo.com/video/331350332" className = "work-imaget" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-            <h3 id = "image-title">Perspective</h3>
-            <p id = "giide-p">Using openFrameworks and the Xbox 360's Kinect camera, I generated a point-cloud mesh of my self. I then use an "easycam", one of openFrameworks' features, to play with the persepctive/POV of the application.</p>
-          </div>
-
-          <div className = "first-image">
-            <iframe src="https://player.vimeo.com/video/359086911" className = "work-imaget" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-            <h3 id = "image-title">Point Cloud Spin</h3>
-            <p id = "giide-p">I took an image of my face and generated a 3d, point cloud representation of myself, using OpenFrameworks</p>
-          </div>
 
 
-          <div className = "first-image">
-            <ModalImage
-              small={'assets/portrait.png'}
-              id = "work-image2"
-              large={'assets/portrait.png'}
-            />
-            <h3 id = "image-title">Point Cloud Portrait v2</h3>
-            <p id = "giide-p">3 dimensional point cloud object generated from a 2 dimensional image of myself. Achieved using OpenFrameworks.</p>
-          </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -92,5 +105,4 @@ class OpenFrameworks extends Component {
 
   }
 }
-
 export default OpenFrameworks;

@@ -11,6 +11,12 @@ import Navbar from 'react-bootstrap/Button';
 import Nav from '../../components/Nav';
 import {Helmet} from "react-helmet";
 import { HashRouter } from 'react-router-dom'
+import posed, { PoseGroup } from 'react-pose';
+
+const RouteContainer = posed.div({
+  enter: { opacity: 1, delay: 300 },
+  exit: { opacity: 0 }
+});
 
 
 
@@ -33,8 +39,6 @@ function App() {
 
 const Navigation = () => (
 
-
-
   <div className = "navContainer">
       <Nav/>
   </div>
@@ -42,22 +46,27 @@ const Navigation = () => (
 );
 
 const RouteComponent = () => (
-      <Switch>
+
+  <Route
+     render={({ location }) => (
+
+           <PoseGroup animateOnMount={true}>
+             <RouteContainer key={location.pathname}>
+               <Switch location={location}>
+                 <Route exact path="/" component={Home} key="home" />
+                 <Route path="/about" component={About} key="about" />
+                 <Route path="/work" component={Work} key="work" />
+                 <Route path="/contact" component={Contact} key="contact" />
 
 
-          <Route  path ="/about" component = {About} />
+               </Switch>
+             </RouteContainer>
+           </PoseGroup>
+     )}
+   />
 
-          <Route exact path="/work" render={()=> {
-            return <Work />
-          }} />
-          <Route exact path="/contact" render={()=> {
-              return <Contact />
-          }} />
-          <Route exact path ="/" render={()=> {
-              return <Home />
-          }} />
 
-      </Switch>
+
   );
 
 export default App;

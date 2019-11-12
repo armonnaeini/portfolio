@@ -73,7 +73,7 @@ function Work() {
                 <ul>
 
                 <li>
-                  <NavLink to="/OpenFrameworks" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>::body</NavLink>
+                  <NavLink to="/OpenFrameworks" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Body</NavLink>
                 </li>
                   <li>
                     <Link to="/Giide" exact className = "work-list hvr-underline-from-left"   activeStyle={{fontWeight: "bold"}}>Giide</Link>

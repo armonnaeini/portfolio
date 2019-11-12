@@ -1,7 +1,7 @@
 #openHeader{
   font-size: 22pt;
   font-family: 'charregular';
-  color: #2C3238;
+  color: rgba(220,200,200,.9) !important;
 
 }
 
@@ -11,9 +11,21 @@
   margin-top: 20px;
   line-height: 16pt;
   max-width: 800px !important;
+  color: rgba(220,200,200,.9) !important;
+
 }
 
 #zach-link{
   font-family: 'charregular';
+  color: rgba(220,200,200,.9) !important;
+
+
+}
+
+
+.work-imagetest2{
+  width: 100% !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01) !important;
+  margin-bottom: 15px;
 
 }

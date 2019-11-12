@@ -1,7 +1,8 @@
 .contactH1{
-  font-family: 'charregular';
-  color: #2F2F32;
-  font-size: 18pt;
+  font-family: 'pangram-black';
+  color: rgba(220,200,200,.9);
+  font-size: 48pt;
+  margin-top: 85px;
 }
 
 
@@ -15,8 +16,8 @@
 }
 
 .list-container{
-  color: #2F2F32;
-  font-family: 'charregular';
+  color: rgba(220,200,200,.9);
+  font-family: 'pangram-regular';
   margin-top: 50%;
 }
 

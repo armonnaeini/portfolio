@@ -27,51 +27,71 @@
     font-style: normal;
 }
 
-
-
-body {
-  font-family: 'Open Sans';
+*, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
 }
 
-.wrapper{
-  display: flex;
-  height: 100vh! important;
-  overflow: hidden;
+
+body{
+  background-color: #1F1E20;
+}
+.shade {
+  position: absolute;
+  background: rgba(0, 299, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.header-container{
+  position: absolute;
+  left: 80px;
+  top: 140px;
 }
 
 .homeH1{
-  color: #2F2F32;
-  font-size: 28pt;
-  font-family: 'charregular';
+  color: rgba(220,200,200,.9);
+  font-size: 60pt;
+  font-family: 'pangram-black';
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
-
 }
 
 .homeH2{
-  color: #2F2F32;
-  font-size: 14pt;
+  color: white;
+  font-size: 16pt;
   font-family: 'charthin';
   -webkit-font-smoothing: antialiased;
   font-weight: 100;
-  margin-top: -8px;
+  margin-top: 2px;
 }
 
-.video-react {
+/*
+.vidContainer{
+  width: 650px;
+ position: relative;
+ top: 55%;
+ left: 50%;
+ margin-left: -25px;
+ -ms-transform: translateX(-50%) translateY(-50%);
+ -webkit-transform: translate(-50%,-50%);
+ transform: translate(-50%,-50%);
+}*/
+
+.vidContainer{
+  width: 600px;
+  margin-left: -10px;
+  position: fixed;
+  margin-top: 380px;
+
+  z-index: -100;
+
+
 }
 
-.video-container{
-  position: absolute;
-  z-index: -1;
-  margin-left: 80px !important;
-  width: 425px;
-  top: 285px;
-
-}
-
-.main-container{
-  height: 100vh !important;
-}
 
 #home-video{
   width: 100%;
@@ -81,10 +101,32 @@ video::-webkit-media-controls {
   display: none;
 }
 
-.header-container{
-  position: absolute;
-  left: 80px;
-  top: 180px;
+
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity 6000ms ease-in;
+}
+
+.example2-appear {
+  opacity: 0.01;
+}
+
+.example2-appear.example2-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.example3-appear {
+  opacity: 0.01;
+}
+
+.example3-appear.example3-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
 }
 
 @media screen and (max-width: 450px){
@@ -94,14 +136,13 @@ video::-webkit-media-controls {
     top: 150px;
   }
 
-  .video-container{
-    margin-top: 30px;
-    margin-left: -75px !important;
-  }
+
 }
 
 @media screen and (min-width: 400px) and (max-width: 650px){
-  .video-container{
+  .vidContainer{
     width: 350px;
+    margin-top: 450px;
+    margin-left: 25px;
   }
 }

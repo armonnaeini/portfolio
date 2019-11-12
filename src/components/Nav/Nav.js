@@ -67,8 +67,8 @@ class Nav extends Component {
       <div className = "nav-wrapper">
 
       <button className= { this.state.active ? "hamburger hamburger--collapse is-active" : "hamburger hamburger--collapse" } type="button" onClick={this.toggleClassOpenModal} >
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
+        <span className="hamburger-box">
+          <span className="hamburger-inner"></span>
         </span>
       </button>
 
@@ -88,15 +88,14 @@ class Nav extends Component {
 
         <nav className = "small-nav">
           <ul className='menu-small'>
-            <NavLink className = "aa" to='/' exact onClick = {this.closeModal} activeStyle={{fontWeight: "900"}}><span id = "small-link">HOME</span></NavLink>
-            <NavLink className = "aa" to='/about' onClick = {this.closeModal} activeStyle={{fontWeight: "900"}}><span id = "small-link">ABOUT</span></NavLink>
-            <NavLink className = "aa" to='/work' onClick = {this.closeModal} activeStyle={{fontWeight: "900"}}><span id = "small-link">WORX</span></NavLink>
-            <NavLink className = "aa" to='/contact' onClick = {this.closeModal} activeStyle={{fontWeight: "900"}}><span id = "small-link">CONTACT</span></NavLink>
+            <NavLink className = "aa" to='/' exact onClick = {this.closeModal} activeStyle={{fontWeight: "900"}}><span id = "small-link">home</span></NavLink>
+            <NavLink className = "aa" to='/about' onClick = {this.closeModal} activeStyle={{fontWeight: "900"}}><span id = "small-link">about</span></NavLink>
+            <NavLink className = "aa" to='/work' onClick = {this.closeModal} activeStyle={{fontWeight: "900"}}><span id = "small-link">worx</span></NavLink>
+            <NavLink className = "aa" to='/contact' onClick = {this.closeModal} activeStyle={{fontWeight: "900"}}><span id = "small-link">contact</span></NavLink>
           </ul>
         </nav>
 
         <button className = "close-button" onClick = {this.closeModal}>close</button>
-        <img id = "o-img" src={"assets/o-min.png"}/>
        </Modal>
 
       <nav className = "large-nav">
