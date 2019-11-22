@@ -41,7 +41,7 @@ class ThreeScene extends Component{
 
         void main() {
           vUv = uv;
-          gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1); //glPosition 
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1); //glPosition
         }
       `,
       fragmentShader: `

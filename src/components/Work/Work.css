@@ -3,6 +3,7 @@
   text-decoration: none;
   top: 70vh;
   left: 40px;
+
 }
 
 
@@ -13,7 +14,7 @@ a{
 }
 
 a:visited{
-  color: white;
+  color: white !important;
 }
 
 

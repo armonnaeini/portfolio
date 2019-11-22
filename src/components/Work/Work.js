@@ -8,10 +8,20 @@ import OpenFrameworks from '../../components/OpenFrameworks';
 import ARPoetry from '../../components/ARPoetry';
 import DigitalArt from '../../components/DigitalArt';
 import NounProject from '../../components/NounProject';
+import Knotbots from '../../components/Knotbots';
+import ApexEx from '../../components/Knotbots';
+import IBM from '../../components/IBM';
+
 
 import './Work.css';
 import '../../hover/hover.css';
 import { HashRouter } from 'react-router-dom'
+import posed, { PoseGroup } from 'react-pose';
+
+const RouteContainer = posed.div({
+  enter: { opacity: 1, delay: 300 },
+  exit: { opacity: 0 }
+});
 
 
 
@@ -21,6 +31,14 @@ import { HashRouter } from 'react-router-dom'
 // render both of them in different places when the
 // path matches the current URL.
 const routes = [
+  {
+    path: "/Body",
+    component: OpenFrameworks
+  },
+  {
+    path: "/IBM",
+    component: IBM
+  },
   {
     path: "/Giide",
     main: () => <Giide />,
@@ -61,46 +79,44 @@ function Work() {
           <div className = "work-head-container">
             <h3 id = "work-header">My favorite projects.</h3>
           </div>
+          <div className = "route-box">
+            <ul>
+              <li>
+                <NavLink to="Body" exact={true} className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Body</NavLink>
+              </li>
+              <li>
+                <NavLink to="IBM" exact={true} className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>IBM</NavLink>
+              </li>
+              <li>
+                <NavLink to="Giide" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Giide</NavLink>
+              </li>
 
-          <MemoryRouter>
-          {routes.map((route, index) => (
-            <Switch key={index}>
-              <Route key={index} path={route.path} component={route.main}
-              />
-            </Switch>
-          ))}
-              <div className = "route-box">
-                <ul>
+              <li>
+                <NavLink to="Knotbots" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Knotbots</NavLink>
+              </li>
+              <li>
+                <NavLink to="ApexEx" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>ApexEx</NavLink>
+              </li>
+              <li>
+                <NavLink to="NounProject" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Noun Project Icon Design</NavLink>
+              </li>
+              <li>
+                <NavLink to="Consilio" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Consilio</NavLink>
+              </li>
+              <li>
+                <NavLink to="DigitalArt" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Art</NavLink>
+              </li>
 
-                <li>
-                  <NavLink to="/OpenFrameworks" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Body</NavLink>
-                </li>
-                  <li>
-                    <Link to="/Giide" exact className = "work-list hvr-underline-from-left"   activeStyle={{fontWeight: "bold"}}>Giide</Link>
-                  </li>
-
-
-                  <li>
-                    <NavLink to="/Websites" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Web Design & Dev</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/ARPoetry" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>ARPoetry</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/NounProject" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Noun Project Icon Design</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/DigitalArt" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Digital Art</NavLink>
-                  </li>
-                </ul>
-              </div>
+            </ul>
+      </div>
 
 
-          </MemoryRouter>
+
 
       </div>
   );
 }
+
 
 
 export default Work;

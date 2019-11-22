@@ -40,3 +40,10 @@
   opacity: 1;
   transition: opacity .5s ease-in;
 }
+
+
+.work-image-2{
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}

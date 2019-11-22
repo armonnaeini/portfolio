@@ -4,6 +4,7 @@ import ImageFadeIn from 'react-image-fade-in'
 import ModalImage from "react-modal-image";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
+import { BrowserRouter as Router, Route, Link, NavLink , Switch, BrowserRouter, withRouter} from "react-router-dom";
 
 
 
@@ -23,122 +24,161 @@ class DigitalArt extends Component {
     return(
 
       <div className = "giide-wrapper">
-        <div className = "total-container">
-
-        <ReactCSSTransitionGroup
-          transitionName="example"
-          transitionAppear={true}
-          transitionAppearTimeout={500}
-          transitionEnter={false}
-          transitionLeave={false}
-        >
-          <div className = "first-image-animate">
-            <h3 id = "image-title">Emotional</h3>
-              <ModalImage
-                small={"assets/digital_art/emo1.png"}
-                className = "work-imagetest"
-                large={"assets/digital_art/emo1.png"}
-              />
-              <div className = "spacer" />
-              <ModalImage
-                small={"assets/digital_art/emo1.png"}
-                className = "work-imagetest"
-                large={"assets/digital_art/emo2.png"}
-              />
-          </div>
-        </ReactCSSTransitionGroup>
 
 
-
-
-
-
-        <ReactCSSTransitionGroup
-          transitionName="example"
-          transitionAppear={true}
-          transitionAppearTimeout={500}
-          transitionEnter={false}
-          transitionLeave={false}
-        >
-        <div className = "first-image-animate">
-          <h3 id = "image-title">Fed Up</h3>
-            <ModalImage
-              small={'assets/digital_art/fedup1.png'}
-              className = "work-imagetest"
-              large={'assets/digital_art/fedup1.png'}
-            />
-            <div className = "spacer" />
-            <ModalImage
-              small={'assets/digital_art/fedup2.png'}
-              className = "work-imatetest"
-              large={'assets/digital_art/fedup2.png'}
-            />
-        </div>
-        </ReactCSSTransitionGroup>
-
-
-        <div className = "first-image">
-          <h3 id = "image-title2">Listen</h3>
-            <ModalImage
-              small={'assets/digital_art/listen.png'}
-              className = "work-imagetest"
-              large={'assets/digital_art/listen.png'}
-            />
-        </div>
-
-        <div className = "first-image">
-          <h3 id = "image-title2">Loser</h3>
-            <ModalImage
-              small={'assets/digital_art/loser1.png'}
-              className = "work-imagetest"
-              large={'assets/digital_art/loser1.png'}
-            />
-            <div className = "spacer" />
-            <ModalImage
-              small={'assets/digital_art/loser2.png'}
-              className = "work-imagetest"
-              large={'assets/digital_art/loser2.png'}
-            />
-        </div>
-
-        <div className = "first-image">
-          <h3 id = "image-title2">Excuse Me</h3>
-            <ModalImage
-              small={'assets/digital_art/excuse_me.png'}
-              className = "work-imagetest"
-              large={'assets/digital_art/excuse_me.png'}
-            />
-        </div>
-
-        <div className = "first-image">
-          <h3 id = "image-title2">Love Your Thyroid Branding</h3>
-            <ModalImage
-              small={'assets/digital_art/lyt1.png'}
-              className = "work-imagetest"
-              large={'assets/digital_art/lyt1.png'}
-            />
-            <div className = "spacer" />
-            <ModalImage
-              small={'assets/digital_art/lyt2.png'}
-              className = "work-imagetest"
-              large={'assets/digital_art/lyt2.png'}
-            />
-        </div>
-
-        <div className = "first-image">
-          <h3 id = "image-title2">Monday</h3>
-            <ModalImage
-              small={'assets/digital_art/monday.png'}
-              className = "work-imagetest"
-              large={'assets/digital_art/monday.png'}
-            />
-        </div>
-
-
-
-
-        </div>
+      <div className = "flex-container">
+      <div className = "return-container">
+        <NavLink to="Work" exact={true} className = "return-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>return</NavLink>
       </div>
+
+          <div className = "work-head-container-2">
+            <h3 id = "work-header">Typographic Design</h3>
+            <h4 id = "work-sub-header">I'm also obsessed with typography.</h4>
+          </div>
+
+          <div className = "total-container">
+
+          <div className = "first-image">
+            <a href="assets/asdf.png" target="_blank">
+              <div className = "overlay-container  hvr-grow" >
+                <div className = "new">
+                  <ImageFadeIn width={0} src={"assets/asdf.png"} className = "image-ov" id = "work-image"/>
+                </div>
+                </div>
+              </a>
+            </div>
+
+              <div className = "first-image">
+                <a href="assets/digital_art/emo1.png" target="_blank">
+                  <div className = "overlay-container  hvr-grow" >
+                    <div className = "new">
+                      <ImageFadeIn width={0} src={"assets/digital_art/emo1.png"} className = "image-ov" id = "work-image"/>
+                    </div>
+                    </div>
+                  </a>
+                </div>
+
+
+              <div className = "first-image">
+                <a href="assets/digital_art/emo2.png" target="_blank">
+                  <div className = "overlay-container  hvr-grow" >
+                    <div className = "new">
+                      <ImageFadeIn width={0} src={"assets/digital_art/emo2.png"} className = "image-ov" id = "work-image"/>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div className = "first-image">
+                <a href="assets/digital_art/fedup1.png" target="_blank">
+                  <div className = "overlay-container  hvr-grow" >
+                    <div className = "new">
+                      <ImageFadeIn width={0} src={"assets/digital_art/fedup1.png"} className = "image-ov" id = "work-image"/>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div className = "first-image">
+                <a href="assets/digital_art/fedup2.png" target="_blank">
+                  <div className = "overlay-container  hvr-grow" >
+                    <div className = "new">
+                      <ImageFadeIn width={0} src={"assets/digital_art/fedup2.png"} className = "image-ov" id = "work-image"/>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div className = "first-image">
+                <a href="assets/digital_art/listen.png" target="_blank">
+                  <div className = "overlay-container  hvr-grow" >
+                    <div className = "new">
+                      <ImageFadeIn width={0} src={"assets/digital_art/listen.png"} className = "image-ov" id = "work-image"/>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div className = "first-image">
+                <a href="assets/digital_art/loser1.png" target="_blank">
+                  <div className = "overlay-container  hvr-grow" >
+                    <div className = "new">
+                      <ImageFadeIn width={0} src={"assets/digital_art/loser1.png"} className = "image-ov" id = "work-image"/>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div className = "first-image">
+                <a href="assets/digital_art/loser2.png" target="_blank">
+                  <div className = "overlay-container  hvr-grow" >
+                    <div className = "new">
+                      <ImageFadeIn width={0} src={"assets/digital_art/loser2.png"} className = "image-ov" id = "work-image"/>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div className = "first-image">
+                <a href="assets/digital_art/asdf.png" target="_blank">
+                  <div className = "overlay-container  hvr-grow" >
+                    <div className = "new">
+                      <ImageFadeIn width={0} src={"assets/digital_art/asdf.png"} className = "image-ov" id = "work-image"/>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div className = "first-image">
+                <a href="assets/digital_art/excuse_me.png" target="_blank">
+                  <div className = "overlay-container  hvr-grow" >
+                    <div className = "new">
+                      <ImageFadeIn width={0} src={"assets/digital_art/excuse_me.png"} className = "image-ov" id = "work-image"/>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div className = "first-image">
+                <a href="assets/digital_art/lyt1.png" target="_blank">
+                  <div className = "overlay-container  hvr-grow" >
+                    <div className = "new">
+                      <ImageFadeIn width={0} src={"assets/digital_art/lyt1.png"} className = "image-ov" id = "work-image"/>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div className = "first-image">
+                <a href="assets/digital_art/lyt2.png" target="_blank">
+                  <div className = "overlay-container  hvr-grow" >
+                    <div className = "new">
+                      <ImageFadeIn width={0} src={"assets/digital_art/lyt2.png"} className = "image-ov" id = "work-image"/>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div className = "first-image">
+                <a href="assets/digital_art/monday.png" target="_blank">
+                  <div className = "overlay-container  hvr-grow" >
+                    <div className = "new">
+                      <ImageFadeIn width={0} src={"assets/digital_art/monday.png"} className = "image-ov" id = "work-image"/>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
     );
 }}
 

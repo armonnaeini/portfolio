@@ -3,6 +3,8 @@ import './NounProject.css';
 import ImageFadeIn from 'react-image-fade-in'
 
 import ModalImage from "react-modal-image";
+import { BrowserRouter as Router, Route, Link, NavLink , Switch, BrowserRouter} from "react-router-dom";
+
 import '../../hover/hover.css';
 
 
@@ -13,25 +15,34 @@ class NounProject extends Component {
 
       <div className = "giide-wrapper">
 
-      <div className = "total-container">
 
-      <div className = "first-image">
-        <h2 id = "openHeader">I made icons for Noun Project.</h2>
-        <p id = "openP">Take a peek at my set of technology icons I designed and released to Noun Project. All icons are free to use, just don't forget to attribute me!</p>
+      <div className = "flex-container">
+      <div className = "return-container">
+        <NavLink to="Work" exact={true} className = "return-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>return</NavLink>
       </div>
 
+          <div className = "work-head-container-2">
+            <h3 id = "work-header">Icons for Noun Project</h3>
+            <h4 id = "work-sub-header">Technology icon set I designed for Noun Project.</h4>
+          </div>
 
-        <div className = "first-image">
-          <ModalImage
-            small={'assets/sheet.png'}
-            id = "work-image2"
-            large={'assets/sheet.png'}
-            className = "hvr-float"
-          />
+          <div className = "total-container">
+            <div className = "first-image">
+
+              <a href="assets/sheet.png" target="_blank">
+                <div className = "overlay-container  hvr-grow" >
+
+                  <div className = "new">
+                    <ImageFadeIn width={0} src={"assets/sheet.png"} className = "image-ov" id = "work-image"/>
+                  </div>
+
+
+                </div>
+              </a>
+              </div>
+
+          </div>
         </div>
-
-
-      </div>
       </div>
     );
 

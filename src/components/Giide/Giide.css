@@ -1,29 +1,111 @@
+.return-container{
+  position: fixed;
+  width: 85px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  bottom: 0;
+  right: 0;
+  color: white;
 
+  font-size: 12pt;
+
+  margin-right: 60px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: .15s ease-in-out;
+}
+
+.new-test-2{
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: rgba(10,0,0,0.5);
+}
+
+.return-container:hover{
+  background-color: #1F1E20;
+  color: white;
+}
 
 .giide-wrapper{
+  margin-top: 190px;
+  display: flex !important;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  width: 100vw;
-  margin-top: 180px;
 }
 
-.first-image{
+.work-head-container-2{
+  top: 21vh;
+  max-width: 900px;
+  align-self: flex-start;
+  margin-bottom: 50px;
+}
 
-  width: 40%;
-  margin-left: 47%;
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  align-self: center;
+  align-items: center;
+}
+
+#work-sub-header{
+  color: white;
+  font-family: 'pangram-extralight';
+  font-weight: 900;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+.total-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-right: 15px;
+
+}
+
+
+
+#overlay-header{
+  color: white;
+  text-align: left;
+  font-size: 16pt;
+  font-family: 'pangram-bold';
+}
+
+.image-ov:hover{
+  opacity: 0;
+}
+
+
+#work-image{
+  width: 100% !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.overlay-container{
+  position: relative;
+  transition: .3s ease-in-out;
   margin-bottom: 35px;
-  background-color: rgba(0,0,0,0);
-
 
 }
-.first-image-animate{
-
-  width: 40%;
-  margin-left: 53.5%;
-  margin-bottom: 35px;
-  background-color: rgba(0,0,0,0);
-
-
+.new{
+  transition: .3s ease-in-out;
 }
+
+
+.overlay-container:hover > .new { opacity: 0.2; }
+
+
+
+
 
 
 .video-container{
@@ -43,37 +125,26 @@
   max-height: 300px;
 }
 
-.overlay-container{
-  position: relative;
-  width: 100%;
+#overlay-p{
+  color: white;
+  text-align: left;
+  font-size: 12pt;
+  font-family: 'pangram-regular';
+  margin-top: 15px;
 }
 
 .second-image{
-  width: 40%;
 
 
 }
-#work-image{
-  width: 100% !important;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 
-}
 .work-imaget{
   width: 100% !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
   height: 40vh;
 }
 
-#work-image2{
-  width: 100% !important;
-  height: auto;
-  background-color: rgba(0,0,0,0);
-}
 
-.second-image{
-  margin-left: 47%;
-
-}
 
 #image-title{
   color: rgba(220,200,200,.9) !important;
@@ -88,11 +159,7 @@ font-family: 'charthin';
 font-size: 12pt;
 }
 
-.total-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .overlay {
   position: absolute;
@@ -100,72 +167,64 @@ font-size: 12pt;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 98.5%;
+  height: 99%;
   width: 100%;
   opacity: 0;
   transition: .3s ease;
-  background-color: black;
-  color: blue;
 }
 
 
 /* When you mouse over the container, fade in the overlay icon*/
 .overlay-container:hover .overlay {
-  opacity: .85;
+  opacity: 1;
 }
 
 .link-button{
   position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-text-align: center;
-color: white !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 75%;
 }
 
 #link{
-  color: white !important;
-  font-size: 12pt;
+  color: white;
+  font-size: 29pt;
   z-index: 1000000000000000;
 
 }
 
-#work-image2{
+.return-list{
+  color: white;
+  font-size: 12pt;
+  font-family: 'pangram-regular';
 }
-
 
 .testtest{
   width: 300px;
 }
 
 
-
-
-
-@media screen and (max-width: 700px){
-  .first-image{
-
+@media screen and (max-width: 800px){
+  .flex-container{
     width: 75%;
-    margin-left: 40px;
-
-
-  }
-  .first-image-animate{
-
-    width: 75%;
-    margin-left: 40px;
-
-
   }
 
-  .total-container{
-    display: flex;
-    flex-direction: column;
+  .return-container{
+    position: relative;
+    align-self: flex-start;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    margin-left: -35px;
+    background-color: rgba(0,0,0,0);
+    color: rgba(255,255,255,.8);
     align-items: flex-start;
-    margin-top: 335px;
-    max-height: 400px;
-    overflow-y: auto;
+    justify-content: flex-start;
   }
 
+  .overlay-container{
+    margin-bottom: 10px  ;
+  }
 }
