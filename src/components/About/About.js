@@ -161,50 +161,13 @@ class About extends Component {
               <p id = "bio-paragraph-2">Photoshop, Illustrator, Premiere, Lightroom, After Effects, Adobe XD, Sketch,
               InVision, Figma, Framer, Blender, AutoDesk</p>
               <h2 id = "bio-header-sub">Development/></h2>
-              <p id = "bio-paragraph-2">HTML, CSS, JS, ReactJS, React Native, C++, openFrameworks, openGL/GLSL, WebGL, C#, Unity3D, Processing, NodeJS,
+              <p id = "bio-paragraph-2">HTML, CSS, JS, ReactJS, React Native, C++, openFrameworks, openGL/GLSL, WebGL, C#, Unity3D, Processing/p5.js, NodeJS,
               AWS, Git, Python </p>
             </div>
             <ThreeScene/>
             <h2 id = "hover-header">mouse over for my skillset</h2>
 
           </div>
-
-        {
-          /*
-          <div className = "image-container-2">
-              <img id = "me-img-2" src={"assets/color_me.png"}/>
-          </div>
-
-          <div className = "right-side">
-
-            <ReactCSSTransitionGroup
-               transitionName="fade"
-               transitionEnterTimeout={1000}
-               transitionLeaveTimeout={1000}
-            >
-              {!this.state.isHidden && <Child />}
-            </ReactCSSTransitionGroup>
-
-            <ReactCSSTransitionGroup
-               transitionName="fade"
-               transitionEnterTimeout={1000}
-               transitionLeaveTimeout={1000}
-            >
-              {this.state.isHidden && <Child2 />}
-            </ReactCSSTransitionGroup>
-
-
-          </div>
-          */
-        }
-
-        {
-          /*
-            <div className = "button-container">
-                <button className = "switch-button hvr-underline-from-left" onClick={this.toggleHidden.bind(this)}> {this.state.isToggleOn ? 'skill' : 'bio'}</button>
-              </div>
-          */
-        }
         </div>
 
     );
@@ -216,7 +179,7 @@ const Bio = () =>(
 
   <div className = "bio-container" key = "asdftest">
     <h1 id = "bio-header">
-      A multimedia designer and developer.
+      I'm a multimedia designer and developer.
     </h1>
     <p id = "bio-paragraph">
       Hi. My name is Armon Naeini, welcome to my digital dream/portfolio. I am a creative technologist

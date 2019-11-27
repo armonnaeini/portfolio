@@ -1,0 +1,118 @@
+.outer-wrapper{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ibm-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 65%;
+  margin-top: 190px;
+  align-items: flex-start;
+}
+
+.title-container{
+  margin-bottom: 125px;
+}
+
+.line{
+  width: 40px;
+  height: 47px;
+  border-bottom: 2.3px solid white;
+  position: absolute;
+}
+
+#ibm-h1{
+  font-family: 'pangram-black';
+  color: white;
+  font-size: 38pt;
+}
+
+#ibm-h2{
+  color: white;
+  font-family: 'pangram-extralight';
+  font-size: 16pt;
+  margin-top: -10px;
+}
+
+#ibm-h2-sub{
+  color: white;
+  font-family: 'pangram-extralight';
+  font-size: 12pt;
+  margin-top: 10px;
+}
+
+.problem{
+  height: 100%;
+  display: flex;
+  flex-direction: column !important;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+#ibm-h3{
+  font-family: 'pangram-regular';
+  color: white;
+  font-size: 16pt;
+  margin-bottom: 25px;
+}
+
+#ibm-p{
+  font-family: 'pangram-extralight';
+  color: white;
+  font-weight: 700;
+}
+
+.user-type{
+  height: 100%;
+  display: flex;
+  flex-direction: column !important;
+  align-items: flex-start;
+  justify-content: space-around;
+  color: white;
+  margin-bottom: 70px;
+
+}
+
+#ibm-ul li {
+  list-style: none;
+  font-family: 'pangram-extralight';
+  font-weight: 700;
+}
+
+#ibm-ul li:before{
+  list-style-position: inside;
+  content: "\2022";
+  width: 1em;
+  display: inline-block;
+}
+
+.persona{
+  margin-bottom: 75px;
+}
+
+.research-1{
+  margin-bottom: 75px;
+}
+
+#enterprise-h{
+  color: white;
+  font-family: 'pangram-regular';
+  margin-bottom: 25px;
+}
+
+.g{
+  margin-bottom: 50px;
+}
+
+
+
+
+.proto-button{
+  background-color: teal;
+  width: 200px;
+  height: 200px;
+}

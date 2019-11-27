@@ -71,14 +71,13 @@ const RouteComponent = () => (
            <PoseGroup animateOnMount={true}>
              <RouteContainer key={location.pathname}>
                <Switch location={location}>
+
                  <Route exact path="/" component={Home} key="home" />
                  <Route path="/about" component={About} key="about" />
                  <Route path="/work" component={Work} key="about" />
-
-
-
                  <Route path="/contact" component={Contact} key="contact" />
-                 <Route path="IBM" componenent={IBM} key="ibm"/>
+
+                 <Route path="/ibm" component={IBM} key="ibm"/>
                  <Route path="/giide" component={Giide} key="g" />
                  <Route path="/body" component={OpenFrameworks} key="b" />
                  <Route path="/knotbots" component={Knotbots} key="kb" />
@@ -86,16 +85,6 @@ const RouteComponent = () => (
                  <Route path="/nounproject" component={NounProject} key="np" />
                  <Route path="/consilio" component={Consilio} key="c" />
                  <Route path="/digitalart" component={DigitalArt} key="da" />
-
-
-
-
-
-
-
-
-
-
 
                </Switch>
              </RouteContainer>

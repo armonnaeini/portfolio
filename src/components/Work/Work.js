@@ -85,7 +85,7 @@ function Work() {
                 <NavLink to="Body" exact={true} className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Body</NavLink>
               </li>
               <li>
-                <NavLink to="IBM" exact={true} className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>IBM</NavLink>
+                <NavLink to="ibm" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>IBM</NavLink>
               </li>
               <li>
                 <NavLink to="Giide" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Giide</NavLink>
