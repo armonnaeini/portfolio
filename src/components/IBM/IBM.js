@@ -72,7 +72,7 @@ class IBM extends Component {
           additional amount of money for features to be added to the car and/or service. The ‘Extras’ page seems have the least impact
           and meaning within all three experiences.</p>
 
-          <h4 id = "enterprise-h">Pain Points</h4>
+          <h4 id = "enterprise-h-2">Pain Points</h4>
           <p id = "ibm-p">The over-generalization of the car type can be seen as problematic, as the user has a chance of being unsatisfied
           either at time of car pickup, or at some point during their trip. As observed from the audits above, each experience does not fully
           specify the kind of vehicle the user is to expect, upon time of arrival. For example, Hertz states ‘Nissan Rogue or similar’.
@@ -83,7 +83,7 @@ class IBM extends Component {
           observation, the user’s type of trip is not necessarily considered, which can lead to selecting the wrong car. The user’s needs and
           preferences are also not considered. </p>
 
-          <h4 id = "enterprise-h">What is considered additional information?</h4>
+          <h4 id = "enterprise-h-2">What is considered additional information?</h4>
           <ul id = "ibm-ul">
             <li id = "ibm-li">Drive</li>
             <li id = "ibm-li">Doors</li>
@@ -111,13 +111,11 @@ class IBM extends Component {
         </div>
 
         <div className = "mockup">
-        <h3 id = "ibm-h3">Mockup</h3>
+        <h3 id = "ibm-h3">Mockup - Finally, the good stuff.</h3>
         <ImageFadeIn width={0} src={"assets/mockup.png"} className = "image-ov" id = "work-image"/>
         </div>
 
-        <div className = "proto-button">
-
-        </div>
+        <a href = "https://google.com/" className = "proto-button">View Prototype</a>
 
         <div className = "conclusion">
         <h3 id = "ibm-h3">Conclusion</h3>
