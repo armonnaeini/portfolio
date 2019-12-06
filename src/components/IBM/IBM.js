@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './IBM.css';
 import ImageFadeIn from 'react-image-fade-in'
+import { BrowserRouter as Router, Route, Link, NavLink , Switch, BrowserRouter} from "react-router-dom";
 
 
 
@@ -11,7 +12,9 @@ class IBM extends Component {
     return(
       <div className = "outer-wrapper">
       <div className = "ibm-wrapper">
-
+      <div className = "return-container">
+        <NavLink to="Work" exact={true} className = "return-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>return</NavLink>
+      </div>
         <div className = "title-container">
           <h1 id = "ibm-h1">IBM Design Challenge</h1>
           <h2 id = "ibm-h2">Hertz Mobile App Redesign</h2>
@@ -115,7 +118,7 @@ class IBM extends Component {
         <ImageFadeIn width={0} src={"assets/mockup.png"} className = "image-ov" id = "work-image"/>
         </div>
 
-        <a href = "https://google.com/" className = "proto-button">View Prototype</a>
+        <a href = "https://xd.adobe.com/view/b4778067-bbe0-4956-7e84-f74a5e653cb3-c246/" className = "proto-button">View Prototype</a>
 
         <div className = "conclusion">
         <h3 id = "ibm-h3">Conclusion</h3>

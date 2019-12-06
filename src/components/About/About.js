@@ -30,7 +30,7 @@ class ThreeScene extends Component{
     var material = new THREE.ShaderMaterial({
       uniforms: {
         color1: {
-          value: new THREE.Color(0x8a2dd7)
+          value: new THREE.Color(0x8a2dd7) //think of uniforms as variables, interchangeable, to be adjusted through app\\\
         },
         color2: {
           value: new THREE.Color( 0xf07121 )

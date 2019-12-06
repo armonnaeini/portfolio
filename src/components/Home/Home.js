@@ -9,6 +9,8 @@ import styled, {keyframes} from 'styled-components';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { fadeInDown } from 'react-animations';
 import posed, { PoseGroup } from 'react-pose';
+import Tilt from 'react-tilt';
+
 
 
 
@@ -26,24 +28,40 @@ class Home extends Component {
       <div className = "wrapper">
 
 
-                  <div className = "header-container">
-                    <h1 className = "homeH1">Digital dreams.</h1>
-                    <h2 className = "homeH2">I'm still sleeping.</h2>
-                  </div>
 
-        <ReactCSSTransitionGroup
-          transitionName="example2"
-          transitionAppear={true}
-          transitionAppearTimeout={1000}
-          transitionEnter={false}
-          transitionLeave={false}
+      <div className = "header-container">
+
+      <Tilt className="Tilt"
+        options= {{
+          max : 25,
+          reset: false}}
+        style={{
+          height: 250 }}
         >
-          <div className = "vidContainer">
-            <video autoPlay="true" muted="true" loop="true" id = "home-video" playsInline>
-              <source src={"assets/NEWVID.mp4"} type="video/mp4"></source>
-            </video>
+
+        <div className="Tilt-inner">
+          <div className = "title-container">
+            <h1 className = "homeH1">I AM DREAMING IN A DIGITAL SPACE.</h1>
+            <h2 className = "homeH2">Don't wake me up.</h2>
           </div>
-        </ReactCSSTransitionGroup>
+        </div>
+
+        <img src = "assets/banner.png" id = "home-img" alt = "asdf"/>
+
+{
+  /*
+  <video autoPlay="true" muted="true" loop="true" id = "home-video" playsInline>
+     <source src={"assets/asdf.mp4"} type="video/mp4"></source>
+   </video>
+  */
+}
+
+
+
+
+      </Tilt>
+
+      </div>
 
 
 

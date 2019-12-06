@@ -12,6 +12,7 @@ import NounProject from '../../components/NounProject';
 import Consilio from '../../components/Consilio';
 import DigitalArt from '../../components/DigitalArt';
 import IBM from '../../components/IBM';
+import iOS from '../../components/iOS';
 
 
 
@@ -39,10 +40,11 @@ const RouteContainer = posed.div({
 
 function App() {
 
+
   return (
 
       <div className="App">
-
+      <title>Armon's World</title>
         <Helmet>
            <title>{ "Armon's World" }</title>
 
@@ -85,7 +87,8 @@ const RouteComponent = () => (
                  <Route path="/nounproject" component={NounProject} key="np" />
                  <Route path="/consilio" component={Consilio} key="c" />
                  <Route path="/digitalart" component={DigitalArt} key="da" />
-
+                 <Route path="/iOS" component={iOS} key = "ios" />
+                 
                </Switch>
              </RouteContainer>
            </PoseGroup>

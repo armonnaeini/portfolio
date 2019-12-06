@@ -64,7 +64,11 @@ const routes = [
   {
       path: "/NounProject",
       main: () => <NounProject />
-  }
+  },
+  {
+        path: "/iOS",
+        main: () => <iOS />
+    }
 ];
 
 
@@ -81,6 +85,9 @@ function Work() {
           </div>
           <div className = "route-box">
             <ul>
+              <li>
+                <NavLink to="iOS" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>iOS</NavLink>
+              </li>
               <li>
                 <NavLink to="Body" exact={true} className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Body</NavLink>
               </li>

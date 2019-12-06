@@ -11,7 +11,10 @@ import { HashRouter } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
+
     <HashRouter hashType = "noslash">
+    <title>Armon's World</title>
+
        <App />
     </HashRouter>, document.getElementById('root')
 );
