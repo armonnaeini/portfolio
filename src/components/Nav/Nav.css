@@ -55,14 +55,14 @@
 .menu-button{
   width: 100px;
   height: 100px;
-  background-color: red;
   display: none !important;
-  z-index: 10000000000;
+
 }
 
 .large-nav{
-  z-index: 20000000000000;
   color: rgba(220,200,200,.9) !important;
+  transform: translateZ(900px) !important;
+
 
 }
 

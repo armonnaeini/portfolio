@@ -30,6 +30,7 @@ class Home extends Component {
 
 
       <div className = "header-container">
+      <div className = "tilt-container">
 
       <Tilt className="Tilt"
         options= {{
@@ -48,6 +49,7 @@ class Home extends Component {
 
         <img src = "assets/banner.png" id = "home-img" alt = "asdf"/>
 
+
 {
   /*
   <video autoPlay="true" muted="true" loop="true" id = "home-video" playsInline>
@@ -60,6 +62,7 @@ class Home extends Component {
 
 
       </Tilt>
+      </div>
 
       </div>
 
