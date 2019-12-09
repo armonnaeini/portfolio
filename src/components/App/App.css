@@ -110,7 +110,7 @@ html {
 
    .navContainer{
      position: fixed; top: 35px; right: 60px; border: 0;
-     z-index: 10000000000000000;
+     z-index: 1000000000000000000000000000;
      transform: translateZ(900px);
 
    }

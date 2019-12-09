@@ -31,6 +31,11 @@ class iOS extends Component {
 
           <div className = "total-container">
 
+
+          <h4 id = "work-sub-header-2">ARKit Face Filters! Done in C++ & GLSL.</h4>
+          <video autoPlay="true" muted="true" loop="true" id = "home-video-2" playsInline>
+             <source src={"assets/face.mov"} type="video/mp4"></source>
+           </video>
           <h4 id = "work-sub-header-2">OpenCV on iOS.</h4>
           <video autoPlay="true" muted="true" loop="true" id = "home-video-2" playsInline>
              <source src={"assets/video1.mp4"} type="video/mp4"></source>
