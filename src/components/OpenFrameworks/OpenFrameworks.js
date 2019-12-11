@@ -84,7 +84,7 @@ class OpenFrameworks extends Component {
 
 
               <div className = "new-test">
-              <a href="assets/screens.png" target="_blank">
+              <a href="assets/body_stills/still1.png" target="_blank">
                 <div className = "overlay-container hvr-grow">
 
                   <div className = "new">
@@ -98,7 +98,7 @@ class OpenFrameworks extends Component {
               </div>
 
               <div className = "new-test">
-              <a href="assets/screens.png" target="_blank">
+              <a href="assets/body_stills/still2.png" target="_blank">
                 <div className = "overlay-container hvr-grow">
 
                   <div className = "new">
@@ -111,7 +111,7 @@ class OpenFrameworks extends Component {
               </div>
 
               <div className = "new-test">
-              <a href="assets/screens.png" target="_blank">
+              <a href="assets/body_stills/still3.png" target="_blank">
                 <div className = "overlay-container hvr-grow">
 
                   <div className = "new">
