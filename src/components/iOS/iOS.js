@@ -26,13 +26,23 @@ class iOS extends Component {
           <div className = "work-head-container-2">
             <h3 id = "work-header">iOS AR Development</h3>
             <h4 id = "work-sub-header">Recently, I've been working with openFrameworks' iOS development port,
-            which has involved exploring Apple's ARKit as well as openCV's translation to iOS. </h4>
+            which has involved exploring Apple's ARKit as well as openCV's translation to iOS. All demonstrations
+            are done in C++ & GLSL.</h4>
           </div>
 
           <div className = "total-container">
 
+          <h4 id = "work-sub-header-2">ofxARKit + GLSL</h4>
+          <video autoPlay="true" muted="true" loop="true" id = "home-video-2" playsInline>
+             <source src={"assets/shader_ar.mp4"} type="video/mp4"></source>
+           </video>
 
-          <h4 id = "work-sub-header-2">ARKit Face Filters! Done in C++ & GLSL.</h4>
+          <h4 id = "work-sub-header-2">OpenCV + iOS + ofMesh + vectors!</h4>
+          <video autoPlay="true" muted="true" loop="true" id = "home-video-2" playsInline>
+             <source src={"assets/mobile.mp4"} type="video/mp4"></source>
+           </video>
+
+           <h4 id = "work-sub-header-2">ARKit face tracking w/ shaders.</h4>
           <video autoPlay="true" muted="true" loop="true" id = "home-video-2" playsInline>
              <source src={"assets/face.mov"} type="video/mp4"></source>
            </video>
@@ -40,18 +50,13 @@ class iOS extends Component {
           <video autoPlay="true" muted="true" loop="true" id = "home-video-2" playsInline>
              <source src={"assets/video1.mp4"} type="video/mp4"></source>
            </video>
-           <h4 id = "work-sub-header-2">ofxARKit anchoring with my lovely kitty.</h4>
 
-           <video autoPlay="true" muted="true" loop="true" id = "home-video-2" playsInline>
-              <source src={"assets/video2.mp4"} type="video/mp4"></source>
-            </video>
-            <h4 id = "work-sub-header-2">ofxARKit anchoring with my lovely self.</h4>
-
+            <h4 id = "work-sub-header-2">AR anchoring with my lovely self.</h4>
             <video autoPlay="true" muted="true" loop="true" id = "home-video-2" playsInline>
                <source src={"assets/video3.mp4"} type="video/mp4"></source>
              </video>
-             <h4 id = "work-sub-header-2">ofxARKit face recognition.</h4>
 
+             <h4 id = "work-sub-header-2">ofxARKit face recognition.</h4>
              <video autoPlay="true" muted="true" loop="true" id = "home-video-2" playsInline>
                 <source src={"assets/video4.mp4"} type="video/mp4"></source>
               </video>
