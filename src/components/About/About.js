@@ -183,7 +183,7 @@ const Bio = () =>(
     </h1>
     <p id = "bio-paragraph">
       Hi. My name is Armon Naeini, welcome to my digital dream/portfolio. I am a creative technologist
-      based in Boulder, Colorado focusing on UX design and development for web, mobile and augmented/virtual
+      focusing on UX design and development for web, mobile and augmented/virtual
       reality technologies.
       <br></br><br></br>
       I live right in the sweet spot between art and technology, where I am able to produce solutions
