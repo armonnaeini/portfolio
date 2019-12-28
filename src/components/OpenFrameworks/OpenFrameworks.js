@@ -33,16 +33,15 @@ class OpenFrameworks extends Component {
 
           <div className = "work-head-container-2">
             <h3 id = "work-header">Body</h3>
-            <h4 id = "work-sub-header">Body is an interactive, motion tracking project I have been working on, for the past year.
-              The project is developed in openFrameworks, a C++ creative toolkit, and utilizes an Xbox 360's Kinect V1 camera for
-              depth-sensing information as well as the open sourced toolkit Computer Vision. The project tracks a viewer's movements,
-              using the Kinect, and displays a silhoutte of the body on either a digital display or projection. As the subject
+            <h4 id = "work-sub-header">Body is an interactive, motion tracking project I developed in openFrameworks, a C++ creative toolkit. The
+              project utilizes an Xbox 360's Kinect V1 camera for
+              depth-sensing information as well as the open sourced toolkit Computer Vision, and can be set up as an installation. Body tracks the subject's movements,
+              and displays a silhoutte of the body on either a digital display or projection. As the subject
               moves around the project space, a trail of their silhoutte is left behind, all shown real time on the display.
-              Body's display.
               <br></br><br></br>
               Body was comissioned to be set up as an interactive installation for the University of Colorado Boulder's
               Open Access Week. The installation ran for three weeks in the Roser ATLAS Building during the month of October
-              2019.
+              2019. Now, Body is currently running at <a href ="https://www.wonderwonder.us/boulder">Wonder Wonder</a>.
               <br></br><br></br>
               Body aims to explore the way humans choose to represent themselves in both digital and physical spaces, as the
               installation introduces a feedback-like relationship between the viewer and the technology. Viewers are encouraged to
@@ -80,14 +79,36 @@ class OpenFrameworks extends Component {
 
 
               <div className = "new-test">
-                <a href="assets/body_stills/still3.png" target="_blank">
+                <a href="assets/body/body1.jpg" target="_blank">
                   <div className = "overlay-container hvr-grow">
                     <div className = "new">
-                      <ImageFadeIn width={0} src={"assets/body_stills/still3.png"} className = "image-ov" id = "work-image"/>
+                      <ImageFadeIn width={0} src={"assets/body/body1.jpg"} className = "image-ov" id = "work-image"/>
                     </div>
                   </div>
                 </a>
               </div>
+
+              <div className = "new-test">
+                <a href="assets/body/body2.jpg" target="_blank">
+                  <div className = "overlay-container hvr-grow">
+                    <div className = "new">
+                      <ImageFadeIn width={0} src={"assets/body/body2.jpg"} className = "image-ov" id = "work-image"/>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div className = "new-test">
+                <a href="assets/body/body3.jpg" target="_blank">
+                  <div className = "overlay-container hvr-grow">
+                    <div className = "new">
+                      <ImageFadeIn width={0} src={"assets/body/body3.jpg"} className = "image-ov" id = "work-image"/>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+
           </div>
         </div>
       </div>
