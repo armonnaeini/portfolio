@@ -1,87 +1,78 @@
-.route-box{
-  position: fixed;
-  text-decoration: none;
-  top: 70vh;
-  left: 40px;
-
+.work-wrapper{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
 }
 
+.work-sub-wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 1600px;
+}
+
+/**LEFT WRAPPER**/
+.work-left-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  padding-left: 100px;
+}
+
+#work-header{
+  font-family: 'neue-haas-grotesk-display';
+  font-weight: 600;
+  color: white;
+  font-size: 50px;
+}
+
+#work-sub-header{
+  max-width: 525px;
+  font-family: 'neue-haas-grotesk-display';
+  font-weight: 200;
+  letter-spacing: .5pt;
+  font-size: 18px;
+  margin-top: -5px;
+}
+
+/**RIGHT WRAPPER**/
+.work-right-wrapper{
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.route-box{
+  text-decoration: none;
+  text-align: right;
+  margin-top: 25px;
+}
 
 a{
   text-decoration: none;
-  font-family: 'pangram-extralight';
-  color: white;
+}
+
+.work-list{
+  font-family: 'neue-haas-grotesk-display';
+  font-weight: 400;
+  font-size: 60pt;
+  margin-bottom: -20px;
+  transition: .15s ease-in-out;
+}
+
+.work-list:hover{
+  color: rgba(240,50,0,1) !important;
 }
 
 a:visited{
   color: white !important;
 }
 
-
-
 .work-head-container{
   position: fixed;
   top: 21vh;
   left: 40px;
   max-width: 550px;
-}
-
-
-#work-header{
-  font-size: 38pt;
-  line-height: 36pt;
-  font-family: 'pangram-black';
-  color: rgba(220,200,200,.9) !important;
-
-}
-
-
-li #active {
-  font-family: 'charregular';
-  color: rgba(220,200,200,.9) !important;
-
-}
-
-
-
-/**MOBILE**/
-@media screen and (max-width: 700px){
-  .work-head-container{
-    top: 9vh;
-    max-width: 300px !important;
-  }
-
-  .route-box{
-    position: fixed;
-    text-decoration: none;
-    top: 23vh;
-    left: 40px;
-  }
-
-  #work-header{
-    font-size: 22pt;
-    line-height: 22pt;
-
-}
-
-}
-
-@media screen and (min-width: 700px) and (max-width: 815px){
-  #work-header{
-    font-size: 28pt;
-    line-height: 30pt;
-
-  }
-  .work-head-container{
-    max-width: 275px !important;
-  }
-}
-
-@media screen and (min-width: 815px) and (max-width: 1025px){
-  .work-head-container{
-    position: fixed;
-    top: 15vh;
-    left: 40px;
-    max-width: 400px;
-  }
 }

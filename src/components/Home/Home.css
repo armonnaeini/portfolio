@@ -27,6 +27,8 @@
     font-style: normal;
 }
 
+
+
 *, *::before, *::after {
     box-sizing: inherit;
     padding: 0;
@@ -93,11 +95,10 @@ body{
 
 
 .homeH1{
-  color: rgba(220,200,200,.95);
+  color: rgba(255,255,255,1);
   font-size: 60pt;
-  font-family: 'pangram-black';
-  -webkit-font-smoothing: antialiased;
-  font-weight: 400;
+  font-family: 'neue-haas-grotesk-display';
+  font-weight: 300;
   max-width: 700px;
   line-height: 54pt;
 }
@@ -105,9 +106,9 @@ body{
 .homeH2{
   color: white;
   font-size: 14pt;
-  font-family: 'charthin';
+  font-family: 'neue-haas-grotesk-display';
   -webkit-font-smoothing: antialiased;
-  font-weight: 100;
+  font-weight: 200;
   margin-top: 2px;
 }
 

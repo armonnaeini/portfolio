@@ -76,51 +76,53 @@ const routes = [
 function Work() {
   return (
 
-
-
-      <div className = "left-container">
-
-          <div className = "work-head-container">
-            <h3 id = "work-header">My favorite projects.</h3>
-          </div>
-          <div className = "route-box">
-            <ul>
-              <li>
-                <NavLink to="iOS" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>iOS</NavLink>
-              </li>
-              <li>
-                <NavLink to="Body" exact={true} className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Body</NavLink>
-              </li>
-              <li>
-                <NavLink to="ibm" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>IBM</NavLink>
-              </li>
-              <li>
-                <NavLink to="Giide" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Giide</NavLink>
-              </li>
-
-              <li>
-                <NavLink to="Knotbots" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Knotbots</NavLink>
-              </li>
-              <li>
-                <NavLink to="ApexEx" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>ApexEx</NavLink>
-              </li>
-              <li>
-                <NavLink to="NounProject" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Noun Project Icon Design</NavLink>
-              </li>
-              <li>
-                <NavLink to="Consilio" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Consilio</NavLink>
-              </li>
-              <li>
-                <NavLink to="DigitalArt" className = "work-list hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Art</NavLink>
-              </li>
-
-            </ul>
+  <div className = "work-wrapper">
+    <div className = "work-sub-wrapper">
+      <div className = "work-left-wrapper">
+        <div className = "work-title-container">
+          <h1 id = "work-header">Work</h1>
+          <p id = "work-sub-header">A collection of various projects, ranging from UX
+          design/development to interactive installations.</p>
+        </div>
       </div>
 
+      <div className = "work-right-wrapper">
+        <div className = "route-box">
+          <ul>
 
-
-
+            <li>
+              <NavLink to="Body" exact={true} className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>Body</NavLink>
+            </li>
+            <li>
+              <NavLink to="iOS" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>iOS</NavLink>
+            </li>
+            <li>
+              <NavLink to="ibm" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>IBM</NavLink>
+            </li>
+            <li>
+              <NavLink to="Giide" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>Giide</NavLink>
+            </li>
+            <li>
+              <NavLink to="Knotbots" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>Knotbots</NavLink>
+            </li>
+            <li>
+              <NavLink to="ApexEx" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>ApexEx</NavLink>
+            </li>
+            <li>
+              <NavLink to="NounProject" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>Noun Project</NavLink>
+            </li>
+            <li>
+              <NavLink to="Consilio" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>Consilio</NavLink>
+            </li>
+            <li>
+              <NavLink to="DigitalArt" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>Art</NavLink>
+            </li>
+          </ul>
+        </div>
       </div>
+      </div>
+  </div>
+
   );
 }
 

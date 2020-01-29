@@ -28,7 +28,7 @@ class Giide extends Component {
 
           <div className = "work-head-container-2">
             <h3 id = "work-header">Giide</h3>
-            <h4 id = "work-sub-header">A selection of my designs wand projects I worked on, during my time at Giide. All work was designed
+            <h4 id = "work-sub-header">A selection of my designs and projects I worked on, during my time at Giide. All work was designed
             and prototyped in Sketch, InVision Studio, and Adobe XD, and was developed using ReactJS and React Native.</h4>
           </div>
 

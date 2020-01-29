@@ -43,6 +43,7 @@ function App() {
 
   return (
 
+
       <div className="App">
       <title>Armon's World</title>
         <Helmet>
@@ -88,7 +89,7 @@ const RouteComponent = () => (
                  <Route path="/consilio" component={Consilio} key="c" />
                  <Route path="/digitalart" component={DigitalArt} key="da" />
                  <Route path="/iOS" component={iOS} key = "ios" />
-                 
+
                </Switch>
              </RouteContainer>
            </PoseGroup>

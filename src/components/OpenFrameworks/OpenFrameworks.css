@@ -1,31 +1,65 @@
-#openHeader{
-  font-size: 22pt;
-  font-family: 'charregular';
-  color: rgba(220,200,200,.9) !important;
+.body-wrapper{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.body-inner-wrapper{
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+ReactPlayer{
+  width: 100px;
+}
+#react-player{
+  width: 100px;
+}
+.body-video-container{
+  margin-top: 75px;
+  align-self: center;
+  width: 100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
-#openP{
-  font-family: 'charthin';
-  margin-top: 20px;
-  line-height: 16pt;
-  max-width: 800px !important;
-  color: rgba(220,200,200,.9) !important;
+.body-blurb-container{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
 }
 
-#zach-link{
-  font-family: 'charregular';
-  color: rgba(220,200,200,.9) !important;
-
-
+.body-blurb-left{
+  padding-left: 25px;
+  margin-bottom: 25px;
 }
 
+.body-blurb-right{
+  padding-right: 25px;
 
-.work-imagetest2{
-  width: 100% !important;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01) !important;
-  margin-bottom: 15px;
+}
+#body-paragraph{
+  max-width: 700px;
+  font-size: 12pt;
+  margin-left: 100px;
+  font-family: 'neue-haas-grotesk-display';
+  font-weight: 300;
+  letter-spacing: .5pt;
+}
+#body-title{
+  font-size: 60pt;
+  font-family: 'neue-haas-grotesk-display';
+  font-weight: 500;
+
 
 }

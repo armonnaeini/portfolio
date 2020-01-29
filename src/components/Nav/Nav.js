@@ -65,6 +65,9 @@ class Nav extends Component {
     return(
 
       <div className = "nav-wrapper">
+      <div className = "icon-container">
+        <img src = "assets/o-min.png" className = "nav-icon" ref = "asdf"/>
+      </div>
 
       <button className= { this.state.active ? "hamburger hamburger--collapse is-active" : "hamburger hamburger--collapse" } type="button" onClick={this.toggleClassOpenModal} >
         <span className="hamburger-box">
@@ -88,10 +91,10 @@ class Nav extends Component {
 
         <nav className = "small-nav">
           <ul className='menu-small'>
-            <NavLink className = "aa" to='/' exact onClick = {this.closeModal} activeStyle={{fontWeight: "900"}}><span id = "small-link">home</span></NavLink>
-            <NavLink className = "aa" to='/about' onClick = {this.closeModal} activeStyle={{fontWeight: "900"}}><span id = "small-link">about</span></NavLink>
-            <NavLink className = "aa" to='/work' onClick = {this.closeModal} activeStyle={{fontWeight: "900"}}><span id = "small-link">worx</span></NavLink>
-            <NavLink className = "aa" to='/contact' onClick = {this.closeModal} activeStyle={{fontWeight: "900"}}><span id = "small-link">contact</span></NavLink>
+            <NavLink className = "aa" to='/' exact onClick = {this.closeModal} activeStyle={{fontWeight: "900"}}><span id = "small-link">HOME</span></NavLink>
+            <NavLink className = "aa" to='/about' onClick = {this.closeModal} activeStyle={{fontWeight: "900"}}><span id = "small-link">ABOUT</span></NavLink>
+            <NavLink className = "aa" to='/work' onClick = {this.closeModal} activeStyle={{fontWeight: "900"}}><span id = "small-link">WORX</span></NavLink>
+            <NavLink className = "aa" to='/contact' onClick = {this.closeModal} activeStyle={{fontWeight: "900"}}><span id = "small-link">CONTACT</span></NavLink>
           </ul>
         </nav>
 
@@ -100,11 +103,10 @@ class Nav extends Component {
 
       <nav className = "large-nav">
         <ul className='menu'>
-          <li><NavLink to='/' exact className="hvr-underline-from-left" activeStyle={{fontWeight: "bold"}} >home</NavLink></li>
-          <li><NavLink to='/about' className="hvr-underline-from-left" activeStyle={{fontWeight: "bold"}} >about</NavLink></li>
-          <li><NavLink to='/work' className="hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>worx</NavLink></li>
-          <li><NavLink to='/contact' className="hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>contact</NavLink></li>
-
+          <li><NavLink to='/' exact className="hvr-underline-from-left" activeStyle={{fontWeight: "bold"}} >Home</NavLink></li>
+          <li><NavLink to='/about' className="hvr-underline-from-left" activeStyle={{fontWeight: "bold"}} >About</NavLink></li>
+          <li><NavLink to='/work' className="hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Work</NavLink></li>
+          <li><NavLink to='/contact' className="hvr-underline-from-left" activeStyle={{fontWeight: "bold"}}>Contact</NavLink></li>
         </ul>
       </nav>
 

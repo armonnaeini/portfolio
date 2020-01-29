@@ -49,18 +49,6 @@ class Home extends Component {
 
         <img src = "assets/banner.png" id = "home-img" alt = "asdf"/>
 
-
-{
-  /*
-  <video autoPlay="true" muted="true" loop="true" id = "home-video" playsInline>
-     <source src={"assets/asdf.mp4"} type="video/mp4"></source>
-   </video>
-  */
-}
-
-
-
-
       </Tilt>
       </div>
 
