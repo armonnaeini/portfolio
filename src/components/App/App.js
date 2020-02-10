@@ -13,6 +13,7 @@ import Consilio from '../../components/Consilio';
 import DigitalArt from '../../components/DigitalArt';
 import IBM from '../../components/IBM';
 import iOS from '../../components/iOS';
+import PutPhoneAway from '../../components/PutPhoneAway';
 
 
 
@@ -89,6 +90,8 @@ const RouteComponent = () => (
                  <Route path="/consilio" component={Consilio} key="c" />
                  <Route path="/digitalart" component={DigitalArt} key="da" />
                  <Route path="/iOS" component={iOS} key = "ios" />
+                 <Route path="/PutPhoneAway" component={PutPhoneAway} key = "pfa" />
+
 
                </Switch>
              </RouteContainer>

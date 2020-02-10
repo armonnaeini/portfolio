@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 60%;
+  width: 55%;
   margin-top: 190px;
   align-items: flex-start;
 }
@@ -25,21 +25,25 @@
 }
 
 #ibm-h1{
-  font-family: 'pangram-black';
+  font-family: 'neue-haas-grotesk-display';
+  font-weight: 600;
   color: white;
-  font-size: 38pt;
+  font-size: 48pt;
+  white-space: nowrap;
 }
 
 #ibm-h2{
   color: white;
-  font-family: 'pangram-extralight';
+  font-family: 'neue-haas-grotesk-display';
+  font-weight: 500;
   font-size: 16pt;
   margin-top: -10px;
 }
 
 #ibm-h2-sub{
   color: white;
-  font-family: 'pangram-extralight';
+  font-family: 'neue-haas-grotesk-display';
+  font-weight: 300;
   font-size: 12pt;
   margin-top: 10px;
 }
@@ -54,16 +58,18 @@
 }
 
 #ibm-h3{
-  font-family: 'pangram-regular';
+  font-family: 'neue-haas-grotesk-display';
+  font-weight: 600;
   color: white;
   font-size: 16pt;
   margin-bottom: 25px;
 }
 
 #ibm-p{
-  font-family: 'pangram-extralight';
+  font-family: 'neue-haas-grotesk-display';
+
   color: white;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .user-type{
@@ -79,8 +85,8 @@
 
 #ibm-ul li {
   list-style: none;
-  font-family: 'pangram-extralight';
-  font-weight: 700;
+  font-family: 'neue-haas-grotesk-display';
+  font-weight: 300;
   color: white;
 }
 
@@ -101,13 +107,16 @@
 
 #enterprise-h{
   color: white;
-  font-family: 'pangram-regular';
+  font-family: 'neue-haas-grotesk-display';
+  font-weight: 500;
   margin-bottom: 25px;
 }
 
 #enterprise-h-2{
   color: white;
-  font-family: 'pangram-regular';
+  font-family: 'neue-haas-grotesk-display';
+  font-weight: 600;
+
   margin-top: 30px;
   margin-bottom: 25px;
 
@@ -141,4 +150,25 @@ a.proto-button:hover{
 
 .conclusion{
   margin-bottom: 75px;
+}
+@media screen and (max-width: 425px){
+  #ibm-h1{
+    font-size: 26pt !important;
+  }
+
+}
+@media screen and (max-width: 750px){
+  #ibm-h1{
+    font-size: 32pt;
+    white-space: wrap;
+    line-height: 26pt;
+  }
+
+  .ibm-wrapper{
+    width: 90%;
+    margin-top: 225px;
+  }
+  .title-container{
+    margin-bottom: 125px !important;
+  }
 }

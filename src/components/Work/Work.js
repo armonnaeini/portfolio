@@ -11,6 +11,8 @@ import NounProject from '../../components/NounProject';
 import Knotbots from '../../components/Knotbots';
 import ApexEx from '../../components/Knotbots';
 import IBM from '../../components/IBM';
+import PutPhoneAway from '../../components/PutPhoneAway';
+
 
 
 import './Work.css';
@@ -82,7 +84,7 @@ function Work() {
         <div className = "work-title-container">
           <h1 id = "work-header">Work</h1>
           <p id = "work-sub-header">A collection of various projects, ranging from UX
-          design/development to interactive installations.</p>
+          design and development to interactive installations.</p>
         </div>
       </div>
 
@@ -97,10 +99,14 @@ function Work() {
               <NavLink to="iOS" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>iOS</NavLink>
             </li>
             <li>
-              <NavLink to="ibm" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>IBM</NavLink>
+              <NavLink to="Giide" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>Giide</NavLink>
             </li>
             <li>
-              <NavLink to="Giide" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>Giide</NavLink>
+              <NavLink to="PutPhoneAway" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>putphoneaway</NavLink>
+            </li>
+
+            <li>
+              <NavLink to="ibm" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>IBM</NavLink>
             </li>
             <li>
               <NavLink to="Knotbots" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>Knotbots</NavLink>
@@ -108,6 +114,7 @@ function Work() {
             <li>
               <NavLink to="ApexEx" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>ApexEx</NavLink>
             </li>
+
             <li>
               <NavLink to="NounProject" className = "work-list hvr-grow" activeStyle={{fontWeight: "bold"}}>Noun Project</NavLink>
             </li>

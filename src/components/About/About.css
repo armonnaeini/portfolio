@@ -30,17 +30,19 @@
       height: 826px;
       width: 600px;
       margin-top: 75px;
+      padding-left: 70px;
 
     }
 
     .three-container{
       z-index: -1;
-      position: absolute;
-      width: 525px;
+      position: relative;
+      width: 480px;
       height: 825px;
     }
 
     #profile-img-2{
+      position: absolute;
       width: 415px;
       margin-top: 5px;
       transition: .5s ease;
@@ -53,8 +55,8 @@
       font-family: 'neue-haas-grotesk-display';
       font-weight: 500;
       text-align: center;
-      position: absolute;
-      bottom: 62px;
+      position: relative;
+      bottom: 30px;
       font-size: 12pt;
     }
 
@@ -100,13 +102,14 @@
 
     /******BIO SIDE***********/
     .bio-container{
-      padding-left: 100px;
+      padding-left: 75px;
+      padding-right: 100px;
     }
 
     #bio-paragraph{
       font-family: 'neue-haas-grotesk-display';
       font-weight: 300;
-      color: rgba(190,190,190,1);
+      color: rgba(255,255,255,1);
       max-width: 600px;
       font-size: 12pt;
       letter-spacing: .4pt;
@@ -116,7 +119,7 @@
 
     #bio-header{
       font-family: 'neue-haas-grotesk-display';
-      color: rgba(220,200,200,1);
+      color: rgba(255,255,255,1);
       font-weight: 600;
       font-size: 30pt;
       line-height: 40pt;
@@ -154,60 +157,65 @@
       list-style-type: none;
     }
 
-    @media screen and (max-width: 425px) {
-      .profile-img-container{
-        flex-direction: column;
-        justify-content: center;
-        height: 800px;
-        width: 500px;
-        margin-top: 0px !important;
-        margin-right: 0px;
-        margin-bottom: -50px !important;
-      }
 
+    @media  screen and (max-width: 500px) {
       .bio-container{
-        margin-bottom: -100px;
+        display: flex;
+        flex-direction:column;
+        align-items: flex-start !important;
+        justify-content: flex-start;
+        max-width: 1600px !important;
+        padding-left: 30px;
+padding-right: 30px;
+      }
+      .profile-img-container{
+        height: 100% !important;
+        margin-top: 100px !important;
+        margin-bottom: 50px !important;
+      }
+      #bio-paragraph{
+        max-width: 1000px !important;
+        padding: 0;
       }
 
       .three-container{
-        padding-bottom: -1000px;
-
+        z-index: -1;
+        width: 300px;
+        height: 600px;
       }
+
+      #profile-img-2{
+        width: 290px;
+      }
+
+      #bio-header{
+        font-size: 24pt;
+        line-height: 24pt;
+        max-width: 500px !important;
+      }
+
+      #hover-header{
+        display: none;
+      }
+
+      .middle{
+        display: none;
+      }
+
+
     }
 
-    @media  screen and (min-width: 425px) and (max-width: 495px) {
-      .right-side{
-        width: 90vw !important;
+    @media  screen and (min-width: 500px) and (max-width: 650px) {
+      .bio-container{
+        width: 100% !important;
       }
 
-      .button-container{
-          position: relative;
-          padding-bottom: 50px;
-          margin-top: 60px;
-      }
-
-      #about-h1{
-        font-size: 18pt !important;
-      }
-
-      .image-container-2{
-        margin-bottom: 50px;
-      }
-
-      #me-img-2{
-        margin-left : 0px !important;
-        height: 60vh !important;
-        margin-bottom: 100px;
-      }
-    }
-
-    @media  screen and (max-width: 650px) {
       .three-container{
         z-index: -1;
         position: absolute;
-        padding-bottom: 100px;
+        padding-bottom: 200px;
         width: 400px;
-        height: 600px;
+        height: 800px;
       }
 
       #profile-img-2{
@@ -235,8 +243,8 @@
       }
 
       #hover-header{
-        text-align: center;
-        margin-right: 0px;
+        bottom: 0 !important;
+        position: relative;
       }
     }
 
@@ -252,8 +260,8 @@
         justify-content: center;
         height: 800px;
         width: 500px;
-        margin-top: 75px;
-        margin-right: 0px;
+        margin-top: 125px;
+        margin-left: -70px;
         margin-bottom: 25px;
       }
   }

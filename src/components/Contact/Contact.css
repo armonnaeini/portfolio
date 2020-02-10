@@ -1,6 +1,7 @@
 .contactH1{
-  font-family: 'pangram-black';
-  color: rgba(220,200,200,.9);
+  font-family: 'neue-haas-grotesk-display';
+  font-weight: 600;
+color: white;
   font-size: 48pt;
   margin-top: 85px;
 }
@@ -16,8 +17,8 @@
 }
 
 .list-container{
-  color: rgba(220,200,200,.9);
-  font-family: 'pangram-regular';
+color: white;
+  font-family: 'neue-haas-grotesk-display';
   margin-top: 50%;
 }
 

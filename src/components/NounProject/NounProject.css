@@ -15,5 +15,26 @@
 
 #zach-link{
   font-family: 'charregular';
+}
 
+.new-header-c{
+  align-self: flex-start;
+  margin-bottom: 50px;
+}
+
+#new-header{
+  font-family: 'neue-haas-grotesk-display';
+  color: white;
+  font-size: 40pt;
+  letter-spacing: -1pt;
+  font-weight: 500;
+}
+
+
+#new-sub-header{
+  font-family: 'neue-haas-grotesk-display';
+  color: white;
+  font-size: 12pt;
+  font-weight: 300;
+  margin-top: 10px;
 }

@@ -1,0 +1,18 @@
+@media screen and (max-width: 550px){
+  #giide-header-h{
+    font-size: 30pt;
+  }
+  .asdfj{
+    margin-top: 20px !important;
+
+  }
+
+  #giide-dashboard{
+    width: 120%;
+    margin-top: 75px;
+
+  }
+  .giide-right-side{
+    margin-bottom: -15px;
+  }
+}
