@@ -38,7 +38,24 @@ class DigitalArt extends Component {
 
 
           <div className = "total-container">
-
+          <div className = "first-image">
+            <a href="assets/digital_art/nothing.png" target="_blank">
+              <div className = "overlay-container" >
+                <div className = "new">
+                  <ImageFadeIn width={0} src={"assets/digital_art/nothing.png"} className = "image-ov" id = "work-image"/>
+                </div>
+                </div>
+              </a>
+            </div>
+          <div className = "first-image">
+            <a href="assets/digital_art/lovebites.png" target="_blank">
+              <div className = "overlay-container" >
+                <div className = "new">
+                  <ImageFadeIn width={0} src={"assets/digital_art/lovebites.png"} className = "image-ov" id = "work-image"/>
+                </div>
+                </div>
+              </a>
+            </div>
           <div className = "first-image">
             <a href="assets/digital_art/bored.png" target="_blank">
               <div className = "overlay-container" >

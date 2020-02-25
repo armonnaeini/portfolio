@@ -186,9 +186,9 @@ const Bio = () =>(
       involve web/mobile UX design and development, AR technologies, as well as interactive installations and immserisve
       experiences.
       <br></br><br></br>
-      I live right in the sweet spot between art and technology, where I am able to produce solutions
+      Armon lives right in the sweet spot between art and technology, where he is able to produce solutions
       and experiences with the perspective of both an artist and engineer. From interactive art installations
-      to web and mobile applications, I live and die for creating digital content across a variety of media.
+      to web and mobile applications, Armon lives and dies for creating digital content across a variety of media.
     </p>
 
   </div>

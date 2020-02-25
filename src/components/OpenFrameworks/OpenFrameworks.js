@@ -36,6 +36,7 @@ class OpenFrameworks extends Component {
               controls="true"
               width="75%"
               height="75%"
+              muted
             />
           </div>
 
@@ -88,6 +89,7 @@ class OpenFrameworks extends Component {
               controls="true"
               width="75%"
               height="75%"
+              muted
             />
           </div>
 
